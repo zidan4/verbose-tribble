@@ -14,5 +14,6 @@ import volatility.addrspace as addrspace
 config.parse_options()
 config.PROFILE = "WinXPSP2x86"
 config.LOCATION = "file://%s" % memory_file
+
 registry.register_global_options(config, commands.Command)
 registry.register_global_options(config, addrspace.BaseAddressSpace)
